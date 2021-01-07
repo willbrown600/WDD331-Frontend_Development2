@@ -182,6 +182,11 @@ Article img{
 	margin-left: 425px;
 }
 
+.post_Cminor img{
+	width: 35%;
+	margin-left: 425px;
+}
+
 .arrow {
     position: absolute;
     width: 20px;
