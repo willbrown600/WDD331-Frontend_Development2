@@ -100,22 +100,36 @@ article.post_minor img{
 	color:lightseagreen;
 }
 
-
+/**************About Me*************/
 
 .Aminor{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 	align-content: center;
 	justify-content: center;
+	height: 500px;
 
 }
+.Aminor h2{
+	height: 50px;
+}
 
-.Aminor h2, p{
+.Aminor h2 a{
+	
+	align-items: right;
+	justify-content: right;
+	margin: 0 auto;
+	
+}
+.Aminor p{
 	grid-column: 2;
+	margin-top: -300px;
+	padding-right: 20px;
+	
 }
 
 .Aminor img{
-	grid-column: 1;
+	width: 300px;
 	
 	
 }
@@ -163,50 +177,9 @@ Article img{
 	align-self: center;
 }
 
-
-.cool>li {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.dropdown {
-    opacity: 0;
-    position: absolute;
-    overflow: hidden;
-    padding: 20px;
-    top: -20px;
-    border-radius: 2px;
-    transition: all 0.5s;
-    transform: translateY(100px);
-    will-change: opacity;
-    display: none;
-}
-
-.trigger-enter .dropdown {
-    display: block;
-}
-
-.trigger-enter-active .dropdown {
-    opacity: 1;
-}
-
-.dropdownBackground {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background: rgb(76, 46, 243);
-    border-radius: 4px;
-    box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
-    transition: all 0.3s, opacity 0.1s, transform 0.2s;
-    transform-origin: 50% 0;
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-}
-
-.dropdownBackground.open {
-    opacity: 1;
+.post_Bminor img{
+	width: 35%;
+	margin-left: 425px;
 }
 
 .arrow {
