@@ -8,36 +8,35 @@
 </head>
 
 <body>
-    <h1>
-        Spanish Mate
-    </h1>
-    <h4>
-        A dictionary web app to help with your understanding of the Spanish language
-    </h4>
+    <main class="wrapper">
+        <h1>
+            Spanish Mate
+        </h1>
+        <h2>
+            A dictionary web app to help with your understanding of the Spanish language
+        </h2>
+
+        <div class="container"></div>
+        <legend> Word to be Translated.</legend>
+        <input type="text" id="input" name="inputSearch" placeholder="Enter your word here">
+
+        <section class="wrapper">
+            <p class="hiddenTranslation"></p>
+            <div id='word'>
+            </div>
+            <p class="hiddenDefinition"></p>
+            <div id='definition'></div>
+        </section>
+        </div>
 
 
-    <input class="input1" type="text" id="input" name="inputSearch" placeholder="Enter your word here">
-    <ul class="suggestions">
-        <li id='input1'></li>
-        <li id='input2'></li>
-    </ul>
-
-    <section class='output'>
-        <div id='Word'></div>
-    </section>
-    <section class='output2'>
-        <div id='definition'></div>
-    </section>
-        
-    
 
 
-    <button type="submit" id="createSubmit">Return translation</button>
-    
-    </form>
-    <ul id="list"></ul>
-    </div>
-    <script src="./main1.js"></script>
+        <button type="submit" id="createSubmit">Return translation</button>
+    </main>
+
+
+    <script src="./translation.js"></script>
 </body>
 
 </html>

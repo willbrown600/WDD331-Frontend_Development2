@@ -1,99 +1,126 @@
 html {
     box-sizing: border-box;
-    background: #ffc600;
+    background: url('./mobile_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'helvetica neue';
     font-size: 30px;
-    font-weight: 200;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  body{
-      margin: 0px auto;
-      justify-items: center;
-      align-content: center;
-      width: 50%;
-  }
-
-.input1{
-    font-size: xx-large;
 }
-  
-  input {
-    width: 50%;
-    padding: 20px;
-    font-size: 15px;
-  }
-  
-  .search-form {
-    max-width: 400px;
-    margin: 50px auto;
-  }
-  
-  input.search {
-    margin: 0;
-    text-align: center;
-    outline: 0;
-    border: 10px solid #F7F7F7;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
     width: 100%;
-    left: -10%;
-    position: relative;
-    top: 10px;
-    z-index: 2;
-    border-radius: 5px;
-    font-size: 80px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
-  }
-  
-  .suggestions {
-    margin: 0;
+}
+
+main.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    padding: 0.2rem;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 1.4rem;
+    font-size: .8rem;
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+}
+
+p.hiddenTranslation::before,
+p.hiddenDefinition::before {
+    content: "";
+    display: none;
+}
+
+p.hiddenTranslation::after {
+    content: "Translation";
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 100%;
+    font-style: italic;
+    color: white;
+}
+
+p.hiddenDefinition::after {
+    content: "Definition";
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 100%;
+    font-style: italic;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+legend {
+    font-size: .7rem;
+    width: 80%;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+input {
+    width: 80%;
+    margin: 0 auto;
+    padding: .5rem;
+    font-size: .8rem;
+}
+
+.wrapper {
+    margin: 0 auto;
     padding: 0;
     position: relative;
-    width: 50%;
+    width: 80%;
     /*perspective: 20px;*/
-  }
-  
-  .suggestions li {
-    background: white;
-    list-style: none;
-    border-bottom: 1px solid #D8D8D8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
-    margin: 5px;
-    padding: 20px;
-    transition: background 0.2s;
-    display: flex;
-    justify-content: space-between;
-    text-transform: capitalize;
-  }
-  
-  .suggestions li:nth-child(even) {
-    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
-    background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
-  }
-  
-  .suggestions li:nth-child(odd) {
-    transform: perspective(100px) rotateX(-3deg) translateY(3px);
-    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
-  }
-  
-  span.population {
-    font-size: 15px;
-  }
-  
-  .hl {
-    background: #ffc600;
-  }
-  button{
-      margin-top: 20px;
-      height: 50px;
-      width: 50%;
-      justify-content: center;
-      align-self: center;
-      display:block;
-      border:rgba(122, 30, 30, 0.12);
-      border-width: 10px;
-      border: solid 5px black;
-      
+}
 
-  }
+div#word {
+    content: counter(',');
+    background-color: white;
+    padding: 0.3rem;
+}
+
+div#definition {
+    background-color: white;
+    padding: 0.3rem;
+}
+
+button {
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 50px;
+    width: 80%;
+    border: rgba(122, 30, 30, 0.12);
+    border-width: 10px;
+    border: solid 5px black;
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        background-image: url('./background2.jpg');
+    }
+    .wrapper {
+        margin: 0 auto;
+        width: 80%;
+    }
+    h2 {
+        margin: 0 auto;
+    }
+}
